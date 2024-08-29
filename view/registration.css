@@ -1,0 +1,176 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../view/index/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed */
+    text-align: right;
+    margin-right: 10px;
+    color: white;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+    display: inline-block;
+    width: calc(95% - 160px); /* Adjust the width based on label width */
+    margin-right: 10px;
+}
+.register-container {
+    width: 540px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    background: transparent;
+    border: 2px solid rgb(15 14 14 / 20%);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+    margin-top: 40px;
+}
+.typedis{
+    grid-column: 1 / -1;
+    font-size: 36px;
+    text-align: center;
+}
+.register-container h1 {
+    grid-column: 1 / -1;
+    font-size: 36px;
+    text-align: center;
+}
+.Loan_plan{
+    background-color: #301ca3;
+    color: white;
+    border: none;
+    padding: 20px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.pagination {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+p{color:white;}
+.pagination button {
+    background: #7d2ae8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+form {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+input {
+    background: #fff;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+select{
+    background: #fff;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 50%;
+    border-radius: 5px;
+}
+input[type="submit"] {
+
+    width: auto;
+    margin-top: 8px;
+    background-color: #c01336;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+ 
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 20);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+.inputbox input::placeholder{
+    color: white;
+}
+.inputbox i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.inputbox input {
+    padding: 20px
+}
+.register-container .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(7, 7, 7);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #fcfcfc;
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+.register-container .btn:hover{
+    opacity: 0.5;
+}
+.register-container .register-link{
+font-size: 15px;
+text-align: center;
+margin: 20px 0 15px;
+}
+.register-link{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register-link a:hover{
+    text-decoration: underline;
+    color: rgb(74, 3, 116);
+
+}
+.register-link a{
+    color: black;
+}
